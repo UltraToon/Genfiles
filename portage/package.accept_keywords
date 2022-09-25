@@ -1,0 +1,22 @@
+
+# XFCE4
+
+xfce-base/* ~amd64
+
+# Flatpak
+
+sys-apps/flatpak ~amd64
+nacct-user/flatpak ~amd64
+nacct-group/flatpak ~amd64
+ndev-util/ostree ~amd64
+
+# Gaming
+games-util/gamemode ~amd64
+
+# Mouse
+
+app-misc/piper ~amd64
+dev-libs/libratbag ~amd64
+
+# Misc
+app-editors/vscodium ~amd64

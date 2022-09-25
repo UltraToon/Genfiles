@@ -1,0 +1,15 @@
+# Misc
+app-admin/doas		persist
+www-client/firefox	hwaccel
+sys-libs/ncurses	-gpm
+dev-libs/libdbusmenu	gtk3
+
+# XFCE4
+xfce-base/xfce4-meta	-upower
+app-text/poppler	-qt5
+
+# Flatpak
+sys-apps/bubblewrap	-suid
+
+# Cups for stupid code
+>=app-text/ghostscript-gpl-9.55.0-r2 cups
