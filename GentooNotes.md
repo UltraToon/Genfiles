@@ -3,8 +3,7 @@ Setup portage TMPFS \
 Setup weekly FSTRIM job with cronjob \
 
 
-**Enable Git-Sync**
-Create the following file:
+**Enable git-sync** by creating the following file:
 
 ```
 /etc/portage/repos.conf/gentoo.conf 
