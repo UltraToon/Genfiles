@@ -22,6 +22,6 @@ sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
 
 To make the switch:
-emerge -a git,
+`emerge -a git,
 rm -rf /var/db/repos/gentoo/*
-emerge --sync
+emerge --sync`
