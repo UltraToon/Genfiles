@@ -1,9 +1,9 @@
-Setup ZRAM compressed block device \
-Setup portage TMPFS \
-Setup weekly FSTRIM job with cronjob
+Setup a compressed **ZRAM** block device with the **ZSTD** algorithm. \
+Setup portage **TMPFS** with at most 10G. \
+Setup a weekly cronjob to **FSTRIM** the disk device.
 
 
-**Enable git-sync** by creating the following file:
+Setup **GIT-SYNC** by creating the following file:
 
 ```
 /etc/portage/repos.conf/gentoo.conf 
@@ -20,7 +20,7 @@ sync-git-verify-commit-signature = yes
 sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
 
-To make the switch: \
+Then make the switch: \
 `emerge -a git` \
 `rm -rf /var/db/repos/gentoo/*` \
 `emerge --sync`
