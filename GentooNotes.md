@@ -4,7 +4,7 @@
 
 ## Setup GIT-SYNC for faster sync time ##
 
-- Install git - `emerge -a git`
+- **(REQUIRED)** Install git: `emerge -a git`
 - Create the following file:
 
 ```
