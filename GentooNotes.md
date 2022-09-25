@@ -1,10 +1,10 @@
 Setup ZRAM compressed block device \
 Setup portage TMPFS \
 Setup weekly FSTRIM job with cronjob \
-Enable git sync
 
 
-To enable git sync for gentoo create the following file,
+**Enable git-sync:** \
+Create the following file:
 
 ```
 /etc/portage/repos.conf/gentoo.conf 
