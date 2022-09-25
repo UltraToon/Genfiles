@@ -2,9 +2,8 @@
 - Setup portage **TMPFS** with at most 10G. \
 - Setup a weekly cronjob to **FSTRIM** the disk device. \
 
----
 
-- Setup **GIT-SYNC** by creating the following file:
+> Setup **GIT-SYNC** by creating the following file:
 
 ```
 /etc/portage/repos.conf/gentoo.conf 
