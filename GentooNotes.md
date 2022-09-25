@@ -1,6 +1,6 @@
 Setup ZRAM compressed block device \
 Setup portage TMPFS \
-Setup weekly FSTRIM job with cronjob \
+Setup weekly FSTRIM job with cronjob
 
 
 **Enable git-sync** by creating the following file:
