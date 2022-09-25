@@ -3,7 +3,7 @@ Setup portage TMPFS \
 Setup weekly FSTRIM job with cronjob \
 
 
-**Enable git-sync:** \
+**Enable Git-Sync**
 Create the following file:
 
 ```
