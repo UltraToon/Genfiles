@@ -2,7 +2,7 @@
 - Setup portage **TMPFS** with at most 10G. \
 - Setup a weekly cronjob to **FSTRIM** the disk device. \
 
-## Setup GIT-SYNC for faster sync time (MAKE SURE TO INSTALL GIT FIRST) ##
+## Setup GIT-SYNC for faster sync time (INSTALL GIT FIRST) ##
 
 - Create the following file:
 
