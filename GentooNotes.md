@@ -21,7 +21,7 @@ sync-git-verify-commit-signature = yes
 sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
 
-To make the switch:
-emerge -a git \
-rm -rf /var/db/repos/gentoo/* \
-emerge --sync \
+To make the switch: \
+`emerge -a git \`
+`rm -rf /var/db/repos/gentoo/* \`
+`emerge --sync`
