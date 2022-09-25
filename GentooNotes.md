@@ -6,7 +6,8 @@ Enable git sync
 
 To enable git sync for gentoo create the following file,
 
-```/etc/portage/repos.conf/gentoo.conf 
+```
+/etc/portage/repos.conf/gentoo.conf 
 
 [DEFAULT]
 main-repo = gentoo
@@ -17,10 +18,9 @@ sync-type = git
 sync-uri = https://github.com/gentoo-mirror/gentoo.git
 auto-sync = yes
 sync-git-verify-commit-signature = yes
-sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc```
+sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
+```
 
-
-````
 To make the switch:
 emerge -a git,
 rm -rf /var/db/repos/gentoo/*
