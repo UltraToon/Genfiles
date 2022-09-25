@@ -1,7 +1,8 @@
 Setup a compressed **ZRAM** block device with the **ZSTD** algorithm. \
 Setup portage **TMPFS** with at most 10G. \
 Setup a weekly cronjob to **FSTRIM** the disk device. \
-\
+
+----------------------------------------------------
 
 Setup **GIT-SYNC** by creating the following file:
 
