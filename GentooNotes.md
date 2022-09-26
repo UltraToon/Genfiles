@@ -9,8 +9,8 @@
 - Create the following file:
 
 ```
-/etc/portage/repos.conf/gentoo.conf -------------------
-
+/etc/portage/repos.conf/gentoo.conf
+-----------------------------------
 [DEFAULT]
 main-repo = gentoo
 
