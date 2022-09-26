@@ -4,7 +4,7 @@
 
 ## Setup GIT-SYNC for faster sync time ##
 
-- **(REQUIRED)** Install git: `emerge -a git`
+- **(REQUIRED)** Install git and eselect-repository: `emerge -a git eselect-repository`
 - Run `eselect repository remove gentoo` to remove the old repo
 - Create the following file:
 
@@ -19,6 +19,7 @@ location = /var/db/repos/gentoo
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/gentoo.git
 auto-sync = yes
+sync-depth = 1
 sync-git-verify-commit-signature = yes
 sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
