@@ -5,6 +5,7 @@
 ## Setup GIT-SYNC for faster sync time ##
 
 - **(REQUIRED)** Install git: `emerge -a git`
+- Run `eselect repository remove gentoo` to remove the old repo
 - Create the following file:
 
 ```
@@ -23,6 +24,5 @@ sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
 
 - Then make the switch: \
-`emerge -a git` \
 `rm -rf /var/db/repos/gentoo/*` \
 `emerge --sync`
