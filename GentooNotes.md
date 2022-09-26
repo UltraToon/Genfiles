@@ -4,12 +4,12 @@
 
 ## Setup GIT-SYNC for faster sync time ##
 
-- **(REQUIRED)** Install git and eselect-repository: `emerge -a git eselect-repository`
-- Run `eselect repository remove gentoo` to remove the old repo
+- **(REQUIRED)** Install git and eselect-repository: `# emerge -a git eselect-repository`
+- Run `# eselect repository remove gentoo` to remove the old repo
 - Create the following file:
 
 ```
-/etc/portage/repos.conf/gentoo.conf 
+/etc/portage/repos.conf/gentoo.conf -------------------
 
 [DEFAULT]
 main-repo = gentoo
@@ -25,5 +25,5 @@ sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc
 ```
 
 - Then make the switch: \
-`rm -rf /var/db/repos/gentoo/*` \
-`emerge --sync`
+`# rm -rf /var/db/repos/gentoo/*` \
+`# emerge --sync`
