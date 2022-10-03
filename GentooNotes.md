@@ -7,6 +7,8 @@
 
 - Apply a **DESKTOP** profile.
 
+- Run `emerge -uqDN @world` to **UPDATE** your packages.
+
 ## Post Install ##
 
 - Setup a compressed **ZRAM** block device with the **ZSTD** algorithm.
