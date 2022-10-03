@@ -1,8 +1,9 @@
 ## Installation ##
 
-- Right when you chroot, emerge `gentoo-kernel-bin` and run `emerge --sync`
-- **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that you added if available.
-- Always use a **DESKTOP** profile.
+- Right when you chroot, emerge `gentoo-kernel-bin` **IMMEDIATELY** and run `emerge --sync`.
+- **IMPORT** your make.conf.
+- **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that **YOU** added if available.
+- Apply a **DESKTOP** profile (Always use a **DESKTOP** profile).
 
 ## Post Install ##
 
