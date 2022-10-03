@@ -1,6 +1,6 @@
 ## Installation ##
 
-- Right when you chroot, fetch **gentoo-kernel-bin**
+- Right when you chroot, emerge `gentoo-kernel-bin` and run `emerge --sync`
 - **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that you added if available.
 - Always use a **DESKTOP** profile.
 
