@@ -1,5 +1,5 @@
-- Do `# emerge -e @world` **ASAP** to apply compiler optimizations.
-- ALWAYS USE A **DESKTOP** PROFILE.
+- **(IMPORTANT)** Do `# emerge -e @world` **ASAP** to apply compiler optimizations. 
+- Always use a **DESKTOP** profile.
 - Setup a compressed **ZRAM** block device with the **ZSTD** algorithm.
 - Setup portage **TMPFS** with at most 10G.
 - Setup a weekly cronjob to **FSTRIM** the disk device.
