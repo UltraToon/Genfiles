@@ -1,13 +1,13 @@
 - **(IMPORTANT)** Do `# emerge -e @world` **ASAP** to apply compiler optimizations. 
 - Always use a **DESKTOP** profile.
 
-### Post Install ###
+## Post Install ##
 
 - Setup a compressed **ZRAM** block device with the **ZSTD** algorithm.
 - Setup portage **TMPFS** with at most 10G.
 - Setup a weekly cronjob to **FSTRIM** the disk device.
 
-## Setup GIT-SYNC for faster sync time ##
+### Setup GIT-SYNC for faster sync time ###
 
 - **(REQUIRED)** Install git and eselect-repository: `# emerge -a git eselect-repository`
 - Run `# eselect repository remove gentoo` to remove the old repo
