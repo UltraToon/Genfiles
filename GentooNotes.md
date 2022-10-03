@@ -1,11 +1,11 @@
 ## Chroot Install ##
 - Right when you chroot, `# emerge -a gentoo-kernel-bin` immediately and run `# emerge --sync`.
 - Copy over your `make.conf`.
-- **(IMPORTANT)** Do `# emerge -ea @world` to re-emerge every package compiled so far, and add GCC optimizations that you added in `make.conf`.
+- Do `# emerge -ea @world` to re-emerge every package compiled so far, and add GCC optimizations that you added in `make.conf`.
 - Apply a desktop profile.
 - Run `# emerge -uqaDN @world` to update your packages.
 - Compile xorg and needed fonts by running `# emerge -a xorg-server fonts-meta`
-- **(IMPORTANT)** Run `# emerge -a --depclean` to clean up orphans and older package versions.
+- Run `# emerge -a --depclean` to clean up orphans and older package versions.
 
 ## Post Install ##
 - Setup a compressed **ZRAM** block device with the **ZSTD** algorithm.
