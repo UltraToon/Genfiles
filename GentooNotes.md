@@ -5,7 +5,7 @@
 
 - **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that **YOU** added if available.
 
-- Apply a **DESKTOP** profile (Always use a desktop profile).
+- Apply a **DESKTOP** profile.
 
 ## Post Install ##
 
