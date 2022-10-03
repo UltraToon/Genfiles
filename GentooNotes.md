@@ -1,13 +1,18 @@
-## Installation ##
+## Chroot Install ##
 
-- Right when you chroot, emerge `gentoo-kernel-bin` **IMMEDIATELY** and run `emerge --sync`.
-- **IMPORT** your make.conf.
+- Right when you chroot, `# emerge -a gentoo-kernel-bin` immediately and run `# emerge --sync`.
 
-- **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that **YOU** added if available.
+- Copy over your `make.conf`.
 
-- Apply a **DESKTOP** profile.
+- **(IMPORTANT)** Do `# emerge -ea @world` to re-emerge every package compiled so far, and add GCC optimizations that you added in `make.conf`.
 
-- Run `emerge -uqDN @world` to **UPDATE** your packages.
+- Apply a desktop profile.
+
+- Run `# emerge -uqaDN @world` to update your packages.
+
+- Compile xorg and needed fonts by running `# emerge -a xorg-server fonts-meta`
+
+- **(IMPORTANT)** Run `# emerge -a --depclean` to clean up orphans and older package versions.
 
 ## Post Install ##
 
