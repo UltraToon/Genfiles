@@ -1,4 +1,4 @@
-## Chroot Install ##
+## Chroot Install (Use desktop stage3) ##
 - Right when you chroot, `# emerge -a gentoo-kernel-bin` immediately and run `# emerge --sync`.
 - Copy over your `make.conf`.
 - Do `# emerge -ea @world` to re-emerge every package compiled so far, and add GCC optimizations that you added in `make.conf`.
