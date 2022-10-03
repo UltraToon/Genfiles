@@ -1,4 +1,7 @@
-- **(IMPORTANT)** Do `# emerge -e @world` **ASAP** to apply compiler optimizations. 
+## Installation ##
+
+- Right when you chroot, fetch **gentoo-kernel-bin**
+- **(IMPORTANT)** Do `# emerge -e @world` to re-emerge every package compiled so far, and add GCC optimizations that you added if available.
 - Always use a **DESKTOP** profile.
 
 ## Post Install ##
