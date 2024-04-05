@@ -1,0 +1,13 @@
+*/*::wayland-desktop ~amd64
+
+# Steam
+*/*::steam-overlay
+games-util/game-device-udev-rules
+sys-libs/libudev-compat
+
+# Hyprland
+gui-libs/xdg-desktop-portal-hyprland
+dev-qt/qtbase
+dev-qt/qtwayland
+dev-qt/qtdeclarative
+dev-qt/qtshadertools

@@ -1,0 +1,56 @@
+{
+    "layer": "top",
+    "height": 30,
+    "spacing": 4,
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "user"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["disk", "memory", "cpu", "temperature", "pulseaudio", "clock", "tray"],
+    "hyprland/workspaces": {
+      	"format-icons": {
+          "default": "",
+          "active": "",
+          "urgent": "",
+      	},
+	"persistent-workspaces": {
+		"*": 5
+        },
+      	"on-scroll-up": "hyprctl dispatch workspace e+1",
+      	"on-scroll-down": "hyprctl dispatch workspace e-1",
+     },
+    "user": {
+    	"format": "Hello {user}! (up {work_H} hours)",
+	"on-click": "$TERMINAL -H fastfetch"
+    },
+    "disk": {
+    	"format": "DISK: {percentage_used}%",
+	"on-click": "$TERMINAL btop"
+    },
+    "memory": {
+    	"interval": 15,
+	"format": "MEM: {percentage}%",
+	"on-click": "$TERMINAL btop"
+    },
+    "cpu": {
+	"interval": 3,
+	"format": "CPU: {usage}%",
+	"on-click": "$TERMINAL btop"
+    },
+    "temperature": {
+    	"format": "TEMP: {temperatureC}°",
+	"format-critical": "TEMP WARNING: {temperatureC}°",
+	"critical-threshold": 85,
+    },
+    "pulseaudio": {
+    	"format": "AUDIO: {volume}%",
+	"format-muted": "MUTED",
+	"on-click": "$TERMINAL pulsemixer",
+    },
+    "clock": {
+    	"format": "{:%a, %H:%M}",
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+    },
+    "tray": {
+    	"icon-size": 21
+    },
+}

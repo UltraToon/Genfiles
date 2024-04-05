@@ -1,0 +1,137 @@
+################################### GLOBAL ##################################
+*/* X wayland pulseaudio vulkan lto pgo orc jit xs openmp clang
+*/* -bluetooth -cups -ipv6 -wifi -elogind -policykit -acl -nls -gpm -gnome -fuse -fortran
+
+*/* CPU_FLAGS_X86:	-* aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3 vpclmulqdq
+*/* VIDEO_CARDS:	-* amdgpu radeonsi
+*/* INPUT_DEVICES:	-* libinput
+*/* QEMU_USER_TARGETS:	-* x86-64
+*/* MICROCODE_SIGNATURES: -* "-s 0x00090672"
+
+################################### LOCAL ###################################
+
+
+### --- Core Utilities --- ###
+# Kernel Management
+sys-apps/systemd-utils boot kernel-install
+sys-kernel/installkernel systemd-boot systemd
+# Qt
+dev-qt/qtbase opengl egl eglfs gles2-only
+dev-qt/qtdeclarative opengl
+sys-apps/xdg-desktop-portal screencast
+dev-qt/qttools opengl
+
+# Network
+
+
+### ----- Desktop Utilities ----- ###
+
+# General Wayland
+dev-qt/qtgui egl # xdg hyprland
+gui-libs/wlroots X
+x11-libs/libxkbcommon X # general (wayland wm)
+gui-apps/wbg png jpeg # wallpaper
+sys-auth/seatd builtin server
+
+# FM
+dev-db/sqlite abi_x86_32
+sys-libs/libcap static-libs
+
+# MPV
+media-video/mpv -uchardet -zlib -alsa
+
+# Waybar
+gui-apps/waybar tray -logind
+dev-libs/libdbusmenu gtk3
+
+# Fonts
+media-fonts/noto extra -cjk
+media-libs/harfbuzz icu
+
+# Busybox
+sys-apps/busybox static -pam
+virtual/libcrypt static-libs
+sys-libs/libxcrypt static-libs
+
+# Sound
+media-video/pipewire sound-server echo-cancel
+media-sound/pulseaudio -daemon
+
+# Misc
+app-admin/doas persist
+sys-libs/zlib minizip # prism
+app-text/xmlto text # xdg-utils
+media-libs/freetype abi_x86_32 # 32 bit font
+x11-libs/libXcomposite abi_x86_32
+media-libs/libsdl2 abi_x86_32 gles2
+app-emulation/wine-staging -abi_x86_32
+app-crypt/gcr gtk # gnome keyring
+
+# Neovim
+app-editors/neovim lua_single_target_luajit
+dev-lua/luv lua_single_target_luajit -lua_single_target_lua5-4
+dev-lua/mpack lua_targets_luajit lua_single_target_luajit
+dev-lua/lpeg lua_targets_luajit lua_single_target_luajit
+dev-lua/lua-cjson internal-fpconv
+
+### --- STEAM --- ###
+x11-libs/libX11  abi_x86_32
+x11-libs/libXau  abi_x86_32
+x11-libs/libxcb  abi_x86_32
+x11-libs/libXdmcp  abi_x86_32
+virtual/opengl  abi_x86_32
+media-libs/mesa  abi_x86_32
+dev-libs/expat  abi_x86_32
+media-libs/libglvnd  abi_x86_32
+sys-libs/zlib  abi_x86_32
+x11-libs/libdrm  abi_x86_32
+x11-libs/libxshmfence  abi_x86_32
+x11-libs/libXext  abi_x86_32
+x11-libs/libXxf86vm  abi_x86_32
+x11-libs/libXfixes  abi_x86_32
+app-arch/zstd  abi_x86_32
+sys-devel/llvm  abi_x86_32
+x11-libs/libXrandr  abi_x86_32
+x11-libs/libXrender  abi_x86_32
+dev-libs/libffi  abi_x86_32
+sys-libs/ncurses  abi_x86_32
+dev-libs/libxml2  abi_x86_32
+dev-libs/icu  abi_x86_32
+sys-libs/gpm  abi_x86_32
+virtual/libelf  abi_x86_32
+dev-libs/elfutils  abi_x86_32
+app-arch/bzip2  abi_x86_32
+dev-libs/nspr  abi_x86_32
+dev-libs/nss  abi_x86_32
+net-libs/libndp  abi_x86_32
+x11-libs/extest abi_x86_32
+dev-libs/libevdev abi_x86_32
+dev-libs/wayland abi_x86_32
+virtual/rust abi_x86_32
+dev-lang/rust-bin abi_x86_32
+x11-libs/libpciaccess abi_x86_32
+sys-devel/clang abi_x86_32
+media-libs/fontconfig abi_x86_32
+sys-libs/libudev-compat abi_x86_32
+media-libs/libpulse abi_x86_32
+media-libs/libsndfile abi_x86_32
+net-libs/libasyncns abi_x86_32
+sys-apps/dbus abi_x86_32
+dev-libs/glib abi_x86_32
+dev-libs/libpcre2 abi_x86_32
+sys-apps/util-linux abi_x86_32
+media-libs/flac abi_x86_32
+media-libs/libogg abi_x86_32
+media-libs/libvorbis abi_x86_32
+media-libs/opus abi_x86_32
+media-sound/lame abi_x86_32
+media-sound/mpg123-base abi_x86_32
+media-libs/freetype abi_x86_32
+media-libs/libpng abi_x86_32
+virtual/libintl abi_x86_32
+virtual/libudev abi_x86_32
+sys-apps/systemd-utils abi_x86_32
+sys-libs/libcap abi_x86_32
+sys-libs/pam abi_x86_32
+virtual/libiconv abi_x86_32
+x11-libs/xcb-util-keysyms abi_x86_32

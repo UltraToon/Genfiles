@@ -1,0 +1,5 @@
+dev-qt/qtbase
+dev-qt/qtwayland
+dev-qt/qtdeclarative
+dev-qt/qtshadertool
+x11-libs/libxkbcommon
